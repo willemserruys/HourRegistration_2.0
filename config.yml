@@ -1,1 +1,7 @@
 DatabaseName: HourRegistration.db
+
+Logging:
+  TraceLevel: Verbose
+  FileLocation: Logs/HourRegistration.log
+
+  
