@@ -1,4 +1,4 @@
-from Logging import Logger
+from Logger import Logger
 import unittest
 
 
@@ -11,6 +11,3 @@ class LoggerTest(unittest.TestCase):
         x.Info('Test')
         x.Warning('Test')   
         self.assertIsNotNone(x)
-
-if __name__ == '__main__':
-    unittest.main()

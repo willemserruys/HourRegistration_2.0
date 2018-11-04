@@ -1,6 +1,5 @@
-from logging import logging
+import logging
 import yaml
-
 
 class Logger:
     def __init__(self):
@@ -21,5 +20,3 @@ class Logger:
     def Warning(self,message):
         self.logging.warning(message)
 
-x = Logger()
-x.Debug('test')
