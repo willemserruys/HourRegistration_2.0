@@ -10,7 +10,12 @@ class DADataBaseConnectionTest(unittest.TestCase):
         y = DADataBaseConnection()
         print(x)
         print(y)
+        
         self.assertEqual(x,y)
+
+    def test_Config(self):
+        x = DADataBaseConnection()
+        self.assertEqual(x.Name,'HourRegistration.db')
 
 if __name__ == '__main__':
     unittest.main()

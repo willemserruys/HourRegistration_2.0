@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine
+import yaml
 
 class DADataBaseConnection(object):
     __instance = None
@@ -9,4 +10,12 @@ class DADataBaseConnection(object):
             DADataBaseConnection.__instance = object.__new__(self)
         DADataBaseConnection.__instance.val = repr(self)
         return DADataBaseConnection.__instance
+
+    def __init__(self):
+        with open("../config.yml", 'r') as ymlfile:
+            cfg = yaml.load(ymlfile)
+            self.Name = cfg['DatabaseName']
+        
+
+
 
