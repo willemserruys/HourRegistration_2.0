@@ -1,4 +1,4 @@
-import logging
+from logging import logging
 import yaml
 
 
