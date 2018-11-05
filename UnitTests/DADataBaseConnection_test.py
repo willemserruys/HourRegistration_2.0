@@ -1,9 +1,9 @@
-from DADataBaseConnection import DADataBaseConnection
+from DataAccess.DADataBaseConnection import DADataBaseConnection
 import unittest
 
 
 # run: python3 -m unittest DADataBaseConnection_Test.py 
-class DADataBaseConnectionTest(unittest.TestCase):
+class Test_DADataBaseConnectionTest(unittest.TestCase):
     def test_Creation(self):
         # test if class is a singleton
         x = DADataBaseConnection()
