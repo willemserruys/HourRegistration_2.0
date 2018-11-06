@@ -12,7 +12,7 @@ class DADataBaseConnection(object):
         return DADataBaseConnection.__instance
 
     def __init__(self):
-        with open("../config.yml", 'r') as ymlfile:
+        with open("config.yml", 'r') as ymlfile:
             cfg = yaml.load(ymlfile)
             self.Name = cfg['DatabaseName']
         

@@ -1,4 +1,4 @@
-from Logger import Logger
+from Globals.Logger import Logger
 import unittest
 
 
