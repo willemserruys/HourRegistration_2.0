@@ -1,4 +1,5 @@
 from sqlalchemy import create_engine
+from sqlalchemy.orm import sessionmaker
 import yaml
 
 class DADataBaseConnection(object):
@@ -15,6 +16,10 @@ class DADataBaseConnection(object):
         with open("config.yml", 'r') as ymlfile:
             cfg = yaml.load(ymlfile)
             self.Name = cfg['DatabaseName']
+            engine = create_engine(self.Name, echo=True) 
+            session = sessionmaker(bind=engine)
+            self.Session = session()
+
         
 
 

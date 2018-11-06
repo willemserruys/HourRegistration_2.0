@@ -1,4 +1,4 @@
-DatabaseName: HourRegistration.db
+DatabaseName: sqlite:///HourRegistration.db
 
 Logging:
   TraceLevel: Verbose
