@@ -12,8 +12,8 @@ class DAProject():
         return self.dbConn.Session.query(Project).all()
 
     def GetById(self,id):
-        return self.dbConn.Session.query(Project).filter(Project.id == id).all()
+        return self.dbConn.Session.query(Project).filter(Project.id == id).first()
 
-da = DAProject()
-print(da.GetAll())
-print(da.GetById(2))
+# da = DAProject()
+# print(da.GetAll())
+# print(da.GetById(3))
